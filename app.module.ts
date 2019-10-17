@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
-import {NgCytoscapeComponent} from './ng2-cytoscape';
+import {NgxCytoscapeComponent} from './ngx-cytoscape.component';
 
 @NgModule({
     declarations: [
-        NgCytoscapeComponent,
+        NgxCytoscapeComponent,
     ],
-    exports: [NgCytoscapeComponent]
+    exports: [NgxCytoscapeComponent]
 })
-export class NgCytoscapeModule {
+export class NgxCytoscapeModule {
 }

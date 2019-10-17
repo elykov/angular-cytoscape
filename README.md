@@ -1,12 +1,12 @@
-# ng2-cytoscape
+# Ngx-cytoscape
 
 ## Example Usage
 
 ### In your `app.module.ts`
-Add the import clause to import the module `NgCytoscapeModule`
+Add the import clause to import the module `NgxCytoscapeModule`
 
 ```typescript
-import {NgCytoscapeModule} from "ng2-cytoscape/dist";
+import {NgxCytoscapeComponent} from './ngx-cytoscape.component';
 ```
 
 Add the `NgCytoscapeModule` to the imports array of the `NgModule`.
@@ -18,7 +18,7 @@ Add the `NgCytoscapeModule` to the imports array of the `NgModule`.
   ],
   imports: [
     BrowserModule,
-    NgCytoscapeModule // <= Add this
+    NgxCytoscapeModule // <= Add this
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -32,9 +32,9 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'graph',
-    template: '<ng2-cytoscape [elements]="graphData"></ng2-cytoscape>',
+    template: '<ngx-cytoscape [elements]="graphData"></ngx-cytoscape>',
     styles: [`
-      ng2-cytoscape {
+      ngx-cytoscape {
         height: 100vh;
         float: left;
         width: 100%;
